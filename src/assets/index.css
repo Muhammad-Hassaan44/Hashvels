@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Blue Theme */
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White background */
+    --foreground: 222.2 47.4% 11.2%; /* Dark blue foreground */
+
+    --card: 0 0% 100%; /* White card */
+    --card-foreground: 222.2 47.4% 11.2%; /* Dark blue card text */
+
+    --popover: 0 0% 100%; /* White popover */
+    --popover-foreground: 222.2 47.4% 11.2%; /* Dark blue popover text */
+
+    --primary: 221.2 83.2% 53.3%; /* Vibrant blue primary */
+    --primary-foreground: 210 40% 98%; /* Light blue/white text on primary */
+
+    --secondary: 210 40% 96.1%; /* Light blue secondary */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Dark blue secondary text */
+
+    --muted: 210 40% 96.1%; /* Light blue muted */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Muted blue-gray text */
+
+    --accent: 210 40% 96.1%; /* Light blue accent */
+    --accent-foreground: 222.2 47.4% 11.2%; /* Dark blue accent text */
+
+    --destructive: 0 84.2% 60.2%; /* Red destructive (unchanged) */
+    --destructive-foreground: 210 40% 98%; /* Light blue/white text */
+
+    --border: 214.3 31.8% 91.4%; /* Light blue-gray border */
+    --input: 214.3 31.8% 91.4%; /* Light blue-gray input */
+    --ring: 221.2 83.2% 53.3%; /* Vibrant blue ring */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 47.4% 11.2%; /* Dark blue background */
+    --foreground: 210 40% 98%; /* Light blue/white foreground */
+
+    --card: 224 71.4% 4.1%; /* Darker blue card */
+    --card-foreground: 210 40% 98%; /* Light blue/white card text */
+
+    --popover: 222.2 47.4% 11.2%; /* Dark blue popover */
+    --popover-foreground: 210 40% 98%; /* Light blue/white popover text */
+
+    --primary: 217.2 91.2% 59.8%; /* Bright blue primary */
+    --primary-foreground: 222.2 47.4% 11.2%; /* Dark blue text on primary */
+
+    --secondary: 215 27.9% 16.9%; /* Darker blue secondary */
+    --secondary-foreground: 210 40% 98%; /* Light blue/white secondary text */
+
+    --muted: 215 27.9% 16.9%; /* Darker blue muted */
+    --muted-foreground: 217.9 10.6% 64.9%; /* Muted blue-gray text */
+
+    --accent: 215 27.9% 16.9%; /* Darker blue accent */
+    --accent-foreground: 210 40% 98%; /* Light blue/white accent text */
+
+    --destructive: 0 72.2% 50.6%; /* Red destructive (unchanged) */
+    --destructive-foreground: 210 40% 98%; /* Light blue/white text */
+
+    --border: 215 27.9% 16.9%; /* Darker blue border */
+    --input: 215 27.9% 16.9%; /* Darker blue input */
+    --ring: 217.2 91.2% 59.8%; /* Bright blue ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
