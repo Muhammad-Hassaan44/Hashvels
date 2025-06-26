@@ -26,7 +26,7 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "public/me .jpg",
+    imageUrl: "/me.jpg",
     firstName: "Muhammad",
     lastName: "Hassaan",
     positions: ["Full Stack Developer", "Creator Of This Website"],
@@ -44,7 +44,7 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl:
-      "public/hussain.jpg",
+      "/hussain.jpg",
     firstName: "Muhammad",
     lastName: "Hussain",
     positions: [" Full Stack Developer"],
@@ -62,7 +62,7 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl:
-      "public/hassnain.jpg",
+      "/hassnain.jpg",
     firstName: "Hassnain",
     lastName: "Ahmed",
     positions: ["Full Stack Developer"],

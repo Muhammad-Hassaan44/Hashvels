@@ -17,7 +17,7 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Understanding Your Vision",
     description:
       "We start with in-depth consultations to align our solutions with your business goals, crafting a tailored roadmap.",
-    imageSrc: "public/problem-solving_9551039.png",
+    imageSrc: "/problem-solving_9551039.png",
     altText: "Illustration of a team discussing project discovery",
   },
   {
@@ -25,7 +25,7 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Crafting Your Solution",
     description:
       "Our team builds scalable software with Vue.js, Laravel, and Node.js, ensuring high performance and quality.",
-    imageSrc: "public/settings_11189221.png",
+    imageSrc: "/settings_11189221.png",
     altText: "Illustration of coding and software development",
   },
   {
@@ -33,7 +33,7 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Launching Seamlessly",
     description:
       "We deploy your software with rigorous testing, cloud integration, and optimizations for speed and security.",
-    imageSrc: "public/startup_6562565.png",
+    imageSrc: "/startup_6562565.png",
     altText: "Illustration of a server setup for software deployment",
   },
   {
