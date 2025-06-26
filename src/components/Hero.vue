@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { useColorMode } from "@vueuse/core";
 import { ref, onMounted } from "vue";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-vue-next";
 
-const mode = useColorMode();
+
 const isVisible = ref(false);
 
 onMounted(() => {

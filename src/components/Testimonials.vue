@@ -66,7 +66,8 @@ const reviewList: ReviewProps[] = [
 const isSectionMounted = ref(false);
 const currentIndex = ref(0);
 const isPaused = ref(false);
-let slideInterval: number | null = null;
+let slideInterval: ReturnType<typeof setInterval>;
+
 
 const totalSlides = computed(() => Math.ceil(reviewList.length / 3));
 
