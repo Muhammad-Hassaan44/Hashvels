@@ -39,7 +39,8 @@ const services: ServiceProps[] = [
     items: [
       "Laravel, PHP & Node.js Development",
       "Database Architecture (MySQL, MongoDB)",
-      "Frontend with Vue.js, React, HTML/CSS",
+      "Frontend with Vue.js",
+      "React/Next.js + Tailwind",
       "API Development & Third-Party Integration",
       "Performance & Security Optimization",
     ],

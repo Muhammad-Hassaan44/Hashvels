@@ -53,8 +53,9 @@ const plans: PlanProps[] = [
     buttonText: "Get Started",
     benefitList: [
       "Laravel, PHP & Node.js Development",
-      "Database Architecture (MySQL, MongoDB)",
-      "Frontend with Vue.js, React, HTML/CSS",
+      "Hashtable Architecture (MySQL, MongoDB)",
+      "Frontend with Vue.js",
+      "React/Next.js + Tailwind",
       "API Development & Third-Party Integration",
       "Performance & Security Optimization",
     ],
@@ -66,7 +67,7 @@ const plans: PlanProps[] = [
     discountedPrice: 349,
     description:
       "Comprehensive solutions for large organizations requiring bespoke software and strategic consulting.",
-    buttonText: "Contact Us",
+    buttonText: "Get Started",
     benefitList: [
       "Bespoke Software Development",
       "Strategic Project Planning",
@@ -79,13 +80,21 @@ const plans: PlanProps[] = [
 
 const isVisible = ref(false);
 
+// Function to scroll to the contact section
+const scrollToContact = () => {
+  const contactSection = document.getElementById("contact");
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 onMounted(() => {
   isVisible.value = true;
 
   // Add subtle 3D tilt effect on cards
-  const cards = document.querySelectorAll('.pricing-card');
+  const cards = document.querySelectorAll(".pricing-card");
   cards.forEach((card) => {
-    card.addEventListener('mousemove', (e: any) => {
+    card.addEventListener("mousemove", (e: any) => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
@@ -95,8 +104,8 @@ onMounted(() => {
       const tiltY = (x - centerX) / 30;
       (card as HTMLElement).style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale(1.02)`;
     });
-    card.addEventListener('mouseleave', () => {
-      (card as HTMLElement).style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+    card.addEventListener("mouseleave", () => {
+      (card as HTMLElement).style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
     });
   });
 });
@@ -172,6 +181,7 @@ onMounted(() => {
           <Button
             :variant="popular === PopularPlan.YES ? 'default' : 'secondary'"
             class="w-full bg-gradient-to-r from-primary to-[#D247BF] text-white hover:from-[#D247BF] hover:to-primary transition-all duration-300"
+            @click="scrollToContact"
           >
             {{ buttonText }}
           </Button>

@@ -41,7 +41,7 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Continuous Partnership",
     description:
       "Our 24/7 support keeps your software updated, secure, and optimized for long-term success.",
-    imageSrc: "public/alliances_17662475.png",
+    imageSrc: "/alliances_17662475.png",
     altText: "Illustration of a support team assisting with software maintenance",
   },
 ];

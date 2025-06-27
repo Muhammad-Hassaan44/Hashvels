@@ -26,10 +26,10 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "/me.jpg",
+    imageUrl: "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yeXppbmdXcFdqNXFCcEhMYzcyNEtPeXhxdmsifQ",
     firstName: "Muhammad",
     lastName: "Hassaan",
-    positions: ["Full Stack Developer", "Creator Of This Website"],
+    positions: ["Full Stack Engineer | Creator of this website"],
     socialNetworks: [
       {
         name: "LinkedIn",
@@ -47,7 +47,7 @@ const teamList: TeamProps[] = [
       "/hussain.jpg",
     firstName: "Muhammad",
     lastName: "Hussain",
-    positions: [" Full Stack Developer"],
+    positions: ["Laravel & React.js Developer"],
     socialNetworks: [
       {
         name: "LinkedIn",
@@ -62,10 +62,10 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl:
-      "/hassnain.jpg",
+      "/lodhi.jpg",
     firstName: "Hassnain",
-    lastName: "Ahmed",
-    positions: ["Full Stack Developer"],
+    lastName: "Lodhi",
+    positions: ["TypeScript & Next.JS Developer"],
     socialNetworks: [
       {
         name: "LinkedIn",
