@@ -46,6 +46,7 @@ const HowItWorksList: HowItWorksProps[] = [
   },
 ];
 
+
 const isVisible = ref(false);
 
 onMounted(() => {

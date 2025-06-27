@@ -24,6 +24,7 @@ interface SocialNetworkProps {
   url: string;
 }
 
+
 const teamList: TeamProps[] = [
   {
     imageUrl: "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yeXppbmdXcFdqNXFCcEhMYzcyNEtPeXhxdmsifQ",

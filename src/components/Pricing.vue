@@ -78,6 +78,7 @@ const plans: PlanProps[] = [
   },
 ];
 
+
 const isVisible = ref(false);
 
 // Function to scroll to the contact section
