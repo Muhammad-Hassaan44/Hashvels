@@ -63,7 +63,7 @@ const teamList: TeamProps[] = [
   },
   {
     imageUrl:
-      "/lodhi.jpg",
+      "/hassnain.jpg",
     firstName: "Hassnain",
     lastName: "Lodhi",
     positions: ["TypeScript & Next.JS Developer"],
